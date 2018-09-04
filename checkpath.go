@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	osPath := flag.String("p", "/home/ubuntu/", "Path or file to check")
+	osPath := flag.String("p", "/home/ec2-user/", "Path or file to check")
 	flag.Parse()
 
 	logFile, err := os.OpenFile("checkpath.log", os.O_CREATE|os.O_APPEND|os.O_RDWR, 0666)
